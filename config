@@ -210,7 +210,7 @@ bindsym $mod+r mode "resize"
 bar {
 	position top
     #i3bar_command i3bar -t
-    status_command i3blocks
+    status_command SCRIPT_DIR=~/blocklets i3blocks
 	height 30
 	colors {
 		#background #222222ff
@@ -261,5 +261,8 @@ exec sh /home/statick/.config/i3/HDMI-1.0.sh
 exec firefox
 #exec dnust
 exec_always nm-applet
+#exec_always nitrogen --restore
 #exec redshift-gtk
+exec bluetoothctl power on
+exec bluethothctl connect D2:50:6D:2B:80:B0  
 # Plugins
