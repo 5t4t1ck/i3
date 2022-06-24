@@ -255,7 +255,7 @@ exec feh --bg-scale /home/statick/Pictures/wallpapers/animales-fantasticos-2-los
 exec picom -b -f
 exec setxkbmap -layout es
 #exec sh /home/statick/.config/i3/eDP-1.sh
-exec sh /home/statick/.config/i3/HDMI-1.0.sh
+#exec sh /home/statick/.config/i3/HDMI-1.0.sh
 #exec telgram-desktop
 #exec mailspring
 exec firefox
@@ -265,4 +265,6 @@ exec_always nm-applet
 #exec redshift-gtk
 exec bluetoothctl power on
 exec bluethothctl connect D2:50:6D:2B:80:B0  
-# Plugins
+exec_always /home/statick/.config/i3/monitors.sh auto
+exec_always /home/statick/.config/i3/wallpapers.sh
+#exec_always /home/statick/.config/polybar/launch.sh
